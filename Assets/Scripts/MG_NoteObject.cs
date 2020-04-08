@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MG_NoteObject : MonoBehaviour
 {
-
+    public GameObject hitEffect, missEffect, goodEffect, perfectEffect;
     public bool pressable;
     public KeyCode keyToPress;
 
@@ -22,7 +22,23 @@ public class MG_NoteObject : MonoBehaviour
             if (pressable)
             {
                 gameObject.SetActive(false);
-                MG_GameManager.instance.noteHit();
+                if (Mathf.Abs(transform.position.y) > 0.25f)
+                {
+                    Debug.Log("Hit");
+                    Instantiate(hitEffect, transform.position, hitEffect.transform.rotation);
+                    MG_GameManager.instance.normalHit();
+                } else if (Mathf.Abs(transform.position.y) > 0.05f)
+                {
+                    Debug.Log("Good");
+                    Instantiate(goodEffect, transform.position, goodEffect.transform.rotation);
+                    MG_GameManager.instance.goodHit();
+                } else
+                {
+                    Debug.Log("Perfect");
+                    Instantiate(perfectEffect, transform.position, perfectEffect.transform.rotation);
+                    MG_GameManager.instance.perfectHit();
+                }
+                //MG_GameManager.instance.noteHit();
             }
         }
     }
@@ -40,8 +56,11 @@ public class MG_NoteObject : MonoBehaviour
         if (other.tag == "Activator")
         {
             pressable = false;
-            if(gameObject.activeInHierarchy)
+            if (gameObject.activeInHierarchy)
+            {
+                Instantiate(missEffect, transform.position, missEffect.transform.rotation);
                 MG_GameManager.instance.noteMiss();
+            }
         }
     }
 }
