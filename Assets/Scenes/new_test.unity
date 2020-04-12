@@ -2653,6 +2653,19 @@ MonoBehaviour:
   multiplierThresholds: 04000000080000000c000000
   currentMultiplier: 0
   multiplerTracker: 0
+  totalNotes: 0
+  normalHits: 0
+  goodHits: 0
+  perfectHits: 0
+  misses: 0
+  results_screen: {fileID: 766832845}
+  percentHit: {fileID: 1903861623}
+  normalsText: {fileID: 1991264647}
+  goodsText: {fileID: 1982387921}
+  perfectsText: {fileID: 723331160}
+  missesText: {fileID: 325538177}
+  rankText: {fileID: 1294892955}
+  finalScoreText: {fileID: 745663033}
 --- !u!4 &1252083449
 Transform:
   m_ObjectHideFlags: 0
