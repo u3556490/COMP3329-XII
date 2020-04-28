@@ -9,12 +9,14 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 changepos;
     private bool facingRight = false;
     private Animator animator;
+    public VectorValue playerSave;
 
     // Start is called before the first frame update
     void Start()
     {
         playerRigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        transform.position = playerSave.initialValue;
     }
 
     // Update is called once per frame
