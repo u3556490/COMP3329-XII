@@ -41,6 +41,13 @@ public class dialog : MonoBehaviour
         }
     }
 
+    public void skip()
+    {
+        continueBtn.SetActive(false);
+        textDisplay.text = "";
+        SceneManager.LoadScene("stage_1");
+    }
+
     // Start is called before the first frame update
     void Start()
     {
