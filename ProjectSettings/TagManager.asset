@@ -7,6 +7,7 @@ TagManager:
   - Activator
   - Note
   - BottomDestroyer
+  - Music
   layers:
   - Default
   - TransparentFX
