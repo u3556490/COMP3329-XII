@@ -12,6 +12,8 @@ public class dialog : MonoBehaviour
     public float typingSpeed = 0.02f;
     public GameObject continueBtn;
 
+    public AudioSource click;
+
     /**
      * https://www.youtube.com/watch?v=f-oSXg6_AMQ
      * without the animation thingy
@@ -28,6 +30,7 @@ public class dialog : MonoBehaviour
 
     public void NextSentence()
     {
+        click.Play();
         continueBtn.SetActive(false);
         if (index < sentences.Length - 1)
         {
@@ -39,6 +42,15 @@ public class dialog : MonoBehaviour
             textDisplay.text = "";
             SceneManager.LoadScene("stage_1");
         }
+    }
+
+    public void skip()
+    {
+        click.Play();
+        continueBtn.SetActive(false);
+        textDisplay.text = "";
+        StopAllCoroutines();
+        SceneManager.LoadScene("stage_1");
     }
 
     // Start is called before the first frame update
