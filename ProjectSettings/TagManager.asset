@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Activator
+  - Note
+  - BottomDestroyer
   - Music
   layers:
   - Default
@@ -43,11 +45,20 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: background
+    uniqueID: 1651675791
+    locked: 0
   - name: Objects
     uniqueID: 3358642055
     locked: 0
   - name: Player
     uniqueID: 1783301711
+    locked: 0
+  - name: MG_note
+    uniqueID: 132793085
+    locked: 0
+  - name: MG_small_note
+    uniqueID: 910888463
     locked: 0
   - name: MG_ButtonText
     uniqueID: 4173871771
