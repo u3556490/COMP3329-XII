@@ -11,12 +11,16 @@ public class GM_2GM : MonoBehaviour
     public float noteDropFrequency;
     public float totalTimeCount = 0;
     //play audio once spacebar is pressed
-    public AudioSource GM2Audio;
+    public static AudioSource GM2Audio;
     public bool playAudio = true;
     //start after a delay
     public int delayStartTime;
     public float delayTimeCount =0;
     public bool delayStart = false;
+    public bool gameStarted = false;
+    public static bool showResult = false;
+    //testing var only, will delete soon
+    public KeyCode justATestingKey;
 
     //representing if there're notes falling in column X(1-8)
     public static int[] noteDropCode=new int[8];
@@ -42,12 +46,31 @@ public class GM_2GM : MonoBehaviour
         string GM2ScoreShow = GM2score.ToString();
         GM2scoreText.text = "Score: " + GM2ScoreShow;
 
+        //testing code only, will delete soon
+        if (Input.GetKeyDown(justATestingKey))
+        {
+            GM2Audio.Stop();            
+        }
+
+
         if ((GM2_Panel_pop.gameStart) && (playAudio))
         {
             Debug.Log("songs");
             playAudio = false;
             GM2Audio.Play();
+            gameStarted = true;
         }
+        if ((!GM2Audio.isPlaying) && (!GM2_pausePanel.paused))
+        {
+            GM2_Panel_pop.gameStart = false;
+            //Debug.Log("turned false");
+            if (gameStarted)
+            {              
+                showResult = true;
+                //Debug.Log(showResult);
+            }
+        }
+
 
         //set all columns to 1 
         for (int i = 0; i < 8; i++)
