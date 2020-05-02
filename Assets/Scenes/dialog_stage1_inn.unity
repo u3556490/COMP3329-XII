@@ -946,37 +946,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1501990123}
   sentences:
-  - '*In an ancient medieval world, near the end of a solemn ceremony, a famed musician
-    stands before the King and begins to play his flute.*'
-  - 'Musician: *places the flute upon his nose* '
-  - '*The crowd is visibly startled and stares in confusion* '
-  - '*The musician begins to play, in spite of the weird stares.  Albeit peculiar
-    in performance, a sweet-sounding melody falls upon the ears of the audience.*'
-  - 'King: What are you doing? Flutes should be played by the MOUTH, not this nonsense!
-    How dare you taint the sanctity of this ceremony with your abnormal act!'
-  - 'Musician: Your Majesty, this is a blessing in the tradition amongst us common
-    folk. Please allow me to continue to transfer such a blessing to my great liege.'
-  - 'King: Enough with this nonsense explanation! Guards - take him to the guillotine!'
-  - "*The guards step forward and seize the musician.  Meanwhile, the Queen leans
-    over and whispers discreetly into the King\u2019s ear.* "
-  - 'Queen: Perhaps we should simply exile him.  I have heard that such a tradition
-    originated in a village far from the realm. Let us exile him and see if he can
-    deliver us such proof. '
-  - 'Queen: If he seeks to deceive us, he will not survive long regardless beyond
-    the city walls.'
-  - '*The king strokes his beard in silence*'
-  - 'King: I have changed my mind. I shall grant mercy to you, commoner. You shall
-    be exiled at once.'
-  - 'King: Until you can find proof of this tradition you speak of, you will not
-    be welcomed in my kingdom.'
-  - 'Musician: Thank you for being merciful, my liege. I will return as soon as possible.'
-  - "*The guards continue to pull the musician out of the palace and throw him out
-    of the castle\u2019s entry gate.  It seems to be an end to the event, but it
-    is just the beginning of the musician's adventure...*"
+  - 'Innkeeper: Ah, the court musician, recently fired.'
+  - "Musician: Come on, I wasn\u2019t fired - simply assigned a new task whilst in
+    exile. I shall be off to find proof of a lost tradition!"
+  - "Innkeeper: That\u2019s quite a fancy way of saying \u201CI am jobless and dishonoured\u201D."
+  - "Innkeeper: I don\u2019t care. You don\u2019t have much money, do you? "
+  - 'Musician: Is this an excuse to tell me to bugger off?'
+  - 'Innkeeper: No. I am looking for someone to entertain our guests at the mead
+    hall. You can play music, right?'
+  - "Musician: Are you kidding me? It\u2019s literally my profession."
+  - "Innkeeper: You don\u2019t want some quick money? Huh?"
+  - 'Musician: I do. I need money to travel.'
+  - 'Innkeeper: Alrighty, come over.'
   typingSpeed: 0.02
   continueBtn: {fileID: 682122920}
   click: {fileID: 926693507}
-  scene_to_load: stage_1
+  scene_to_load: MG_stage1_inn
 --- !u!4 &1489077686
 Transform:
   m_ObjectHideFlags: 0
