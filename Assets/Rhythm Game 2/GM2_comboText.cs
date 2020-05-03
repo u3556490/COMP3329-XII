@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class GM2_comboText : MonoBehaviour
 {
     public Text GM2comboText;
+    public static int maxCombo=0;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,10 @@ public class GM2_comboText : MonoBehaviour
     void Update()
     {
         int combo = Activator.GM2ActivatorComboCount;
+        if(combo> maxCombo)
+        {
+            maxCombo = combo;
+        }
         string comboShow = combo.ToString();
         GM2comboText.text = "Combo\n" + comboShow + " X";
     }
