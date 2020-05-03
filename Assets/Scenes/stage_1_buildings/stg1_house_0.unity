@@ -899,7 +899,7 @@ GameObject:
   - component: {fileID: 69892592}
   - component: {fileID: 69892591}
   m_Layer: 0
-  m_Name: stage_1_inn
+  m_Name: stg1_house_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

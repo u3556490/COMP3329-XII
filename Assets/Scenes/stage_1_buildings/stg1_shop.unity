@@ -661,7 +661,7 @@ GameObject:
   - component: {fileID: 319310499}
   - component: {fileID: 319310498}
   m_Layer: 0
-  m_Name: stage_1_inn
+  m_Name: stg1_shop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
