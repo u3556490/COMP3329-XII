@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GM2_endingText : MonoBehaviour
 {
     public GameObject endPanel;
     public KeyCode returnMainGameKey;
     public Text scoresBoard;
+    public string next_scene;
 
     // Start is called before the first frame update
     void Start()
@@ -48,6 +50,7 @@ public class GM2_endingText : MonoBehaviour
             if (Input.GetKeyDown(returnMainGameKey))
             {
                 Debug.Log("detected enter return");
+                SceneManager.LoadScene(next_scene);
             }
             
 
