@@ -9,7 +9,7 @@ public class GM_2GM : MonoBehaviour
     public Text GM2scoreText;
     //frequency of notes dropping
     public float noteDropFrequency;
-    public float totalTimeCount = 0;
+    public static float totalTimeCount = 0;
     //play audio once spacebar is pressed
     public static AudioSource GM2Audio;
     public bool playAudio = true;
@@ -21,6 +21,9 @@ public class GM_2GM : MonoBehaviour
     public static bool showResult = false;
     //testing var only, will delete soon
     public KeyCode justATestingKey;
+    //font
+    Text m_Text;
+    public Font m_Font;
 
     //representing if there're notes falling in column X(1-8)
     public static int[] noteDropCode=new int[8];
@@ -36,6 +39,7 @@ public class GM_2GM : MonoBehaviour
     }
     void Start()
     {
+        m_Text = GetComponent<Text>();
         GM2Audio = GetComponent<AudioSource>();
     }
 
@@ -44,7 +48,8 @@ public class GM_2GM : MonoBehaviour
     {
         GM2score = Activator.GM2ActivatorScoreCount;
         string GM2ScoreShow = GM2score.ToString();
-        GM2scoreText.text = "Score: " + GM2ScoreShow;
+        GM2scoreText.font = m_Font;
+        GM2scoreText.text = "Score " + GM2ScoreShow;
 
         //testing code only, will delete soon
         if (Input.GetKeyDown(justATestingKey))

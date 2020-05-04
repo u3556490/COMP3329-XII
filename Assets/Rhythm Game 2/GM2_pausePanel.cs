@@ -17,7 +17,7 @@ public class GM2_pausePanel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(pausePanelKey) && GM2_Panel_pop.gameStart)
+        if (Input.GetKeyDown(pausePanelKey) && GM2_Panel_pop.gameStart && (GM_2GM.totalTimeCount>0.1))
         {
             if (paused)
             {

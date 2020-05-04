@@ -1074,7 +1074,6 @@ GameObject:
   - component: {fileID: 461652406}
   - component: {fileID: 461652408}
   - component: {fileID: 461652407}
-  - component: {fileID: 461652409}
   m_Layer: 5
   m_Name: ComboText
   m_TagString: Untagged
@@ -1098,8 +1097,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -302.6, y: 143.9}
-  m_SizeDelta: {x: 108.19, y: 89.76}
+  m_AnchoredPosition: {x: -286, y: 101}
+  m_SizeDelta: {x: 175.7, y: 158.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &461652407
 MonoBehaviour:
@@ -1122,20 +1121,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 28
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 57
+    m_MinSize: 4
+    m_MaxSize: 68
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Combo
-
-'
+  m_Text: combo
 --- !u!222 &461652408
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1144,19 +1141,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 461652405}
   m_CullTransparentMesh: 0
---- !u!114 &461652409
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 461652405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8c71c341520db241a2e3a486a041b78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GM2comboText: {fileID: 461652407}
 --- !u!1 &480308211
 GameObject:
   m_ObjectHideFlags: 0
@@ -2081,8 +2065,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 246.1, y: -226.1}
-  m_SizeDelta: {x: 299.18, y: 132.71}
+  m_AnchoredPosition: {x: 201.6, y: -212.7}
+  m_SizeDelta: {x: 316.2, y: 142.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &752990788
 MonoBehaviour:
@@ -2105,7 +2089,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 32
+    m_FontSize: 42
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
@@ -2138,15 +2122,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GM2scoreText: {fileID: 752990788}
-  noteDropFrequency: 1
-  totalTimeCount: 0
-  GM2Audio: {fileID: 752990791}
+  noteDropFrequency: 0.6
   playAudio: 1
   delayStartTime: 6
   delayTimeCount: 0
   delayStart: 0
   gameStarted: 0
   justATestingKey: 109
+  m_Font: {fileID: 12800000, guid: cac31857fbfb795489d232297b3df942, type: 3}
 --- !u!82 &752990791
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2159,7 +2142,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e35243e9f4c9e1344ab623a2660e7cc3, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.457
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2461,6 +2444,7 @@ GameObject:
   - component: {fileID: 784522477}
   - component: {fileID: 784522481}
   - component: {fileID: 784522482}
+  - component: {fileID: 784522483}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2567,6 +2551,10 @@ MonoBehaviour:
   endPanel: {fileID: 1304312680}
   returnMainGameKey: 13
   scoresBoard: {fileID: 1929622844}
+  sceneToLoad: stage_1
+  playerPosition: {x: -1.36, y: -11.31}
+  playerStorage: {fileID: 11400000, guid: e0294d416919a614482c25e0969e8aa2, type: 2}
+  m_Font: {fileID: 12800000, guid: b57af476813ae114f9f020835bf2be7a, type: 3}
 --- !u!114 &784522482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2581,7 +2569,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pausePanel: {fileID: 1628851668}
   pausePanelKey: 32
-  paused: 0
+--- !u!114 &784522483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784522476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8c71c341520db241a2e3a486a041b78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GM2comboText: {fileID: 461652407}
+  m_Font: {fileID: 12800000, guid: cac31857fbfb795489d232297b3df942, type: 3}
 --- !u!1 &881483781
 GameObject:
   m_ObjectHideFlags: 0
@@ -2899,7 +2900,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b57af476813ae114f9f020835bf2be7a, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -2956,8 +2957,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -163.73831, y: 114.2}
-  m_SizeDelta: {x: 321.4, y: 45.9}
+  m_AnchoredPosition: {x: -173.2, y: 93.6}
+  m_SizeDelta: {x: 338.5, y: 95.503}
   m_Pivot: {x: -0.06, y: 0.5}
 --- !u!114 &1136569413
 MonoBehaviour:
@@ -2972,14 +2973,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.91955876, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b57af476813ae114f9f020835bf2be7a, type: 3}
     m_FontSize: 39
     m_FontStyle: 0
     m_BestFit: 0
@@ -3116,8 +3117,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -163.73831, y: 114.2}
-  m_SizeDelta: {x: 321.4, y: 45.9}
+  m_AnchoredPosition: {x: -205.8, y: 101.97}
+  m_SizeDelta: {x: 426.1, y: 75.013}
   m_Pivot: {x: -0.06, y: 0.5}
 --- !u!114 &1284782463
 MonoBehaviour:
@@ -3132,14 +3133,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.7607844, g: 0.7607844, b: 0.7607844, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b57af476813ae114f9f020835bf2be7a, type: 3}
     m_FontSize: 39
     m_FontStyle: 0
     m_BestFit: 0
@@ -3895,8 +3896,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -163.73831, y: 114.2}
-  m_SizeDelta: {x: 321.4, y: 45.9}
+  m_AnchoredPosition: {x: -179, y: 105.59}
+  m_SizeDelta: {x: 351, y: 66.39}
   m_Pivot: {x: -0.06, y: 0.5}
 --- !u!114 &1786798910
 MonoBehaviour:
@@ -3911,14 +3912,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.7607844, g: 0.7607844, b: 0.7607844, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b57af476813ae114f9f020835bf2be7a, type: 3}
     m_FontSize: 39
     m_FontStyle: 0
     m_BestFit: 0
@@ -4456,8 +4457,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.5, y: -26.5}
-  m_SizeDelta: {x: 551.8, y: 193.9}
+  m_AnchoredPosition: {x: 2.2, y: -27.46}
+  m_SizeDelta: {x: 521.5, y: 230.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1906561252
 MonoBehaviour:
@@ -4479,11 +4480,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 24
+    m_Font: {fileID: 12800000, guid: b57af476813ae114f9f020835bf2be7a, type: 3}
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 78
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -4491,21 +4492,21 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Press a, s, d, f, j, k, l, ;  to play the game.
+  m_Text: '
 
-    Notes will drop from
-    above
-
-    Press the keys when the notes arrive
+    Press a s d f j k l ;  to catch the dropping notes.
 
 
-    Try to make as many combo
-    as you can!
+    More combo
+    means more multiplier for score!
 
-    [Press SPACE BAR to start]
+    Try to make as many combo as you can!
 
-    [Press SPACE BAR to pause in
-    the game]'
+
+    [Press
+    SPACE BAR to start]
+
+    [Press SPACE BAR to pause in the game]'
 --- !u!222 &1906561253
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4650,7 +4651,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b57af476813ae114f9f020835bf2be7a, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
