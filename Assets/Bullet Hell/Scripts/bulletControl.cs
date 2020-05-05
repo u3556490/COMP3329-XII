@@ -19,15 +19,20 @@ public class bulletControl : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D col)
-    {        
+    {
+        string name = col.gameObject.name;
 
-        if (col.gameObject.tag == "Demon")
+
+        if (name == "Demon")
         {
             Destroy(gameObject);
 
             DemonMovement.hp -= 100;
             Debug.Log(DemonMovement.hp);
-
+        }
+        if (DemonMovement.hp == 0)
+        {
+            Destroy(col.gameObject);
         }
     }
     // Update is called once per frame
