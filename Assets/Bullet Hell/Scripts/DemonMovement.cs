@@ -6,6 +6,7 @@ public class DemonMovement : MonoBehaviour
 {
     private float moveSpeed;
     private bool moveRight;
+    public static int hp=5000;
 
     // Start is called before the first frame update
     void Start()
@@ -35,4 +36,6 @@ public class DemonMovement : MonoBehaviour
             transform.position = new Vector2(transform.position.x - moveSpeed * Time.deltaTime, transform.position.y);
         }
     }
+
+    
 }

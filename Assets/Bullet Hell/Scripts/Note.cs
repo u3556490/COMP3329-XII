@@ -11,6 +11,7 @@ public class Note : MonoBehaviour
     {
         Invoke("Destroy", 3f);
     }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,4 +38,5 @@ public class Note : MonoBehaviour
     {
         CancelInvoke();
     }
+    
 }
