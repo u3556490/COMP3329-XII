@@ -31,7 +31,7 @@ public class FireNote : MonoBehaviour
             n.GetComponent<Note>().SetMoveDirection(noteDir);
         }
 
-        angle += 10f;
+        angle += 20f;
 
         if (angle >= 360f)
         {
