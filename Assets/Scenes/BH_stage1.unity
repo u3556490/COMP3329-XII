@@ -669,7 +669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shoot: 32
   bullet: {fileID: 1709590942697137, guid: a3bdef73476b4264d92781575070e511, type: 3}
-  speed: 20
+  speed: 10
   bgm: {fileID: 670878911}
 --- !u!50 &623059262
 Rigidbody2D:
