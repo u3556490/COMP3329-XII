@@ -7401,7 +7401,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -936325241
-  m_SortingLayer: 2
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -8024,8 +8024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 083dc4e6dd5bde942af2dfe8a4aa5e1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
-  playerSave: {fileID: 0}
+  speed: 10
 --- !u!61 &1981125060
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8111,7 +8110,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1783301711
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 1239997267041418887, guid: b1c6e1cf45ba67e4f8226e30c66a0e26, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8230,7 +8229,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -936325241
-  m_SortingLayer: 2
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 3.0625, y: 3.625, z: 0}

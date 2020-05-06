@@ -32,6 +32,7 @@ public class MG_GameManager : MonoBehaviour
 
     public GameObject results_screen;
     public Text percentHit, normalsText, goodsText, perfectsText, missesText, rankText, finalScoreText;
+    public GameObject titlePanel;
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +56,7 @@ public class MG_GameManager : MonoBehaviour
             {
                 startPlaying = true;
                 bs.hasStarted = true;
+                titlePanel.SetActive(false);
                 music.Play();
             }
         } else

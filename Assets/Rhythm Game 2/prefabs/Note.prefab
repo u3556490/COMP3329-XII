@@ -217,5 +217,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1944dc5320c1bc14ab36a88ecfeaab63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beat_tempo: 500
+  beat_tempo: 600
   missImage: {fileID: 6920195780754589706, guid: 39435de2f8edbf04f955c461018d9887, type: 3}

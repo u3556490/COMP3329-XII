@@ -9,18 +9,11 @@ public class GM2_endingText : MonoBehaviour
     public GameObject endPanel;
     public KeyCode returnMainGameKey;
     public Text scoresBoard;
-    //variables for returning the scene
-    public string sceneToLoad;
-    public Vector2 playerPosition;
-    public VectorValue playerStorage;
-
-    Text m_Text;
-    public Font m_Font;
+    public string next_scene;
 
     // Start is called before the first frame update
     void Start()
     {
-        m_Text = GetComponent<Text>();
         endPanel.gameObject.SetActive(false);
     }
 
@@ -30,10 +23,9 @@ public class GM2_endingText : MonoBehaviour
 
         if (GM_2GM.showResult == true)
         {
-
+            
             //Debug.Log("showresult activated");
-            scoresBoard.font = m_Font;
-            scoresBoard.text = "Score: " + GM_2GM.GM2score.ToString() + "\n" + "Max Combo: " + GM2_comboText.maxCombo.ToString() + "\n";
+            scoresBoard.text = "Score: " + GM_2GM.GM2score.ToString() + "\n" + "Max Combo: " + GM2_comboText.maxCombo.ToString();
             if (GM2_comboText.maxCombo <= 8)
             {
                 scoresBoard.text += "\nI bet you didn't do your best...";
@@ -57,9 +49,11 @@ public class GM2_endingText : MonoBehaviour
             endPanel.gameObject.SetActive(true);
             if (Input.GetKeyDown(returnMainGameKey))
             {
-                playerStorage.initialValue = playerPosition;
-                SceneManager.LoadScene(sceneToLoad);
+                Debug.Log("detected enter return");
+                SceneManager.LoadScene(next_scene);
             }
+            
+
         }
     }
 }

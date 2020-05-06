@@ -13,6 +13,7 @@ public class dialog : MonoBehaviour
     public GameObject continueBtn;
 
     public AudioSource click;
+    public string scene_to_load;
 
     /**
      * https://www.youtube.com/watch?v=f-oSXg6_AMQ
@@ -40,7 +41,11 @@ public class dialog : MonoBehaviour
         } else
         {
             textDisplay.text = "";
-            SceneManager.LoadScene("stage_1");
+            if (GameObject.FindGameObjectWithTag("Music") != null)
+            {
+                GameObject.FindGameObjectWithTag("Music").GetComponent<BGM>().StopMusic();
+            }
+            SceneManager.LoadScene(scene_to_load);
         }
     }
 
@@ -50,7 +55,11 @@ public class dialog : MonoBehaviour
         continueBtn.SetActive(false);
         textDisplay.text = "";
         StopAllCoroutines();
-        SceneManager.LoadScene("stage_1");
+        if (GameObject.FindGameObjectWithTag("Music") != null)
+        {
+            GameObject.FindGameObjectWithTag("Music").GetComponent<BGM>().StopMusic();
+        }
+        SceneManager.LoadScene(scene_to_load);
     }
 
     // Start is called before the first frame update

@@ -15,7 +15,7 @@ public class GM_2GM : MonoBehaviour
     public bool playAudio = true;
     //start after a delay
     public int delayStartTime;
-    public float delayTimeCount =0;
+    public float delayTimeCount = 0;
     public bool delayStart = false;
     public bool gameStarted = false;
     public static bool showResult = false;
@@ -26,7 +26,7 @@ public class GM_2GM : MonoBehaviour
     public Font m_Font;
 
     //representing if there're notes falling in column X(1-8)
-    public static int[] noteDropCode=new int[8];
+    public static int[] noteDropCode = new int[8];
 
     void Awake()
     {
@@ -54,7 +54,7 @@ public class GM_2GM : MonoBehaviour
         //testing code only, will delete soon
         if (Input.GetKeyDown(justATestingKey))
         {
-            GM2Audio.Stop();            
+            GM2Audio.Stop();
         }
 
 
@@ -70,7 +70,7 @@ public class GM_2GM : MonoBehaviour
             GM2_Panel_pop.gameStart = false;
             //Debug.Log("turned false");
             if (gameStarted)
-            {              
+            {
                 showResult = true;
                 //Debug.Log(showResult);
             }
@@ -87,22 +87,22 @@ public class GM_2GM : MonoBehaviour
         {
             totalTimeCount += Time.deltaTime;
             delayTimeCount += Time.deltaTime;
-        }      
+        }
         //detect if the starting time passed or not
-        if (delayTimeCount>delayStartTime)
+        if (delayTimeCount > delayStartTime)
         {
             delayStart = true;
         }
-        if ((totalTimeCount >= noteDropFrequency)&& (delayStart))
+        if ((totalTimeCount >= noteDropFrequency) && (delayStart))
         {
-            totalTimeCount = 0;          
+            totalTimeCount = 0;
             int numberOfNotesDropping = Random.Range(1, 3);
             //set to 2 if the column is going to fall a note
             for (int i = 0; i < numberOfNotesDropping; i++)
             {
                 int ActivatorDropping = Random.Range(0, 7);
-                noteDropCode[ActivatorDropping] = 2;               
-            }            
-        }              
+                noteDropCode[ActivatorDropping] = 2;
+            }
+        }
     }
 }

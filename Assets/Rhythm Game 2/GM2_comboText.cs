@@ -7,7 +7,7 @@ public class GM2_comboText : MonoBehaviour
 {
     Text m_Text;
     public Text GM2comboText;
-    public static int maxCombo=0;
+    public static int maxCombo = 0;
     public Font m_Font;
     // Start is called before the first frame update
     void Start()
@@ -19,7 +19,7 @@ public class GM2_comboText : MonoBehaviour
     void Update()
     {
         int combo = Activator.GM2ActivatorComboCount;
-        if(combo> maxCombo)
+        if (combo > maxCombo)
         {
             maxCombo = combo;
         }
