@@ -4,28 +4,28 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class GameEnd : MonoBehaviour
+public class GameOver : MonoBehaviour
 {
-    public GameObject endPanel;
+    public GameObject deadPanel;
     public KeyCode returnMainGameKey;
-    public Text endMessage;
+    public Text gameOverMessage;
     public string next_scene;
 
     // Start is called before the first frame update
     void Start()
     {
-        endPanel.gameObject.SetActive(false);
+        deadPanel.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (DemonMovement.hp == 0)
+        if (playerControl.life == 0)
         {
-            endMessage.text = "Good Job!";
-            endMessage.text += "\nPress [" + returnMainGameKey + "] to continue...";
-            endPanel.gameObject.SetActive(true);
+            gameOverMessage.text = "Game Over!";
+            gameOverMessage.text += "\nPress [" + returnMainGameKey + "] to continue...";
+            deadPanel.gameObject.SetActive(true);
             if (Input.GetKeyDown(returnMainGameKey))
             {
                 Debug.Log("detected enter return");

@@ -18,11 +18,11 @@ public class DemonMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x > 7f)
+        if (transform.position.x > 10f)
         {
             moveRight = false;
         }
-        else if (transform.position.x < -7f)
+        else if (transform.position.x < -10f)
         {
             moveRight = true;
         }

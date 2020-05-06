@@ -10,6 +10,7 @@ public class playerControl : MonoBehaviour
     private Vector3 changepos;
     public VectorValue playerSave;
     public float speed;
+    public static int life = 10;
 
     // Start is called before the first frame update
     void Start()
@@ -43,9 +44,11 @@ public class playerControl : MonoBehaviour
     {
 
 
-        if (col.gameObject.tag == "Note(Clone)")
+        if (col.gameObject.name == "Note(Clone)")
         {
-            Destroy(col.gameObject);
+            col.gameObject.SetActive(false);
+            life -= 1;
+            Debug.Log(playerControl.life);
         }
     }
 }

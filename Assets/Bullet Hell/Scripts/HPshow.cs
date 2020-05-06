@@ -11,14 +11,14 @@ public class HPshow : MonoBehaviour {
     void Start()
     {
         string bulletHellScoreShow = DemonMovement.hp.ToString();
-        bulletHellScoreText.text = "HP: " + bulletHellScoreShow;
+        bulletHellScoreText.text = "Demon HP: " + bulletHellScoreShow;
     }
 
     // Update is called once per frame
     void Update()
     {
         string bulletHellScoreShow = DemonMovement.hp.ToString();
-        bulletHellScoreText.text = "HP: " + bulletHellScoreShow;
+        bulletHellScoreText.text = "Demon HP: " + bulletHellScoreShow;
         //Debug.Log(bulletHellScoreShow);
     }
 }

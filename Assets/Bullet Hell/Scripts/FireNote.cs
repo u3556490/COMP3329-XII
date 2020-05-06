@@ -11,7 +11,7 @@ public class FireNote : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("Fire", 0f, 0.1f);
+        InvokeRepeating("Fire", 0f, 0.15f);
     }
 
     private void Fire()
@@ -31,7 +31,7 @@ public class FireNote : MonoBehaviour
             n.GetComponent<Note>().SetMoveDirection(noteDir);
         }
 
-        angle += 20f;
+        angle += 10f;
 
         if (angle >= 360f)
         {
