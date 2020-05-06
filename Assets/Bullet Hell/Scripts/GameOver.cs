@@ -21,7 +21,7 @@ public class GameOver : MonoBehaviour
     void Update()
     {
 
-        if (playerControl.life == 0)
+        if (playerControl.life <= 0)
         {
             gameOverMessage.text = "Game Over!";
             gameOverMessage.text += "\nPress [" + returnMainGameKey + "] to continue...";
@@ -31,7 +31,7 @@ public class GameOver : MonoBehaviour
                 Debug.Log("detected enter return");
                 SceneManager.LoadScene(next_scene);
             }
-            Time.timeScale = 0.0F;
+            //Time.timeScale = 0.0F;
 
         }
     }

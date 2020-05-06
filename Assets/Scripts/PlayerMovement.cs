@@ -16,7 +16,10 @@ public class PlayerMovement : MonoBehaviour
     {
         playerRigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        transform.position = playerSave.initialValue;
+        if (playerSave != null)
+            transform.position = playerSave.initialValue;
+        else
+            transform.position = new Vector2(0f, 0f);
     }
 
     // Update is called once per frame
@@ -27,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
         changepos.y = Input.GetAxisRaw("Vertical");
         if (Input.GetAxisRaw("Horizontal") > 0.5f && !facingRight)
         {
-            //If we're moving right but not facing right, flip the sprite and set     facingRight to true.
+            //If we're moving right but not facing right, flip the sprite and set facingRight to true.
             Flip();
             facingRight = true;
         }

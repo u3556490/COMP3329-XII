@@ -8,13 +8,15 @@ public class playerControl : MonoBehaviour
     public GameObject bullet;
     private Rigidbody2D playerRigidbody;
     private Vector3 changepos;
-    public VectorValue playerSave;
+    //public VectorValue playerSave;
     public float speed;
     public static int life = 10;
+    public AudioSource bgm;
 
     // Start is called before the first frame update
     void Start()
     {
+        bgm.Play();
         playerRigidbody = GetComponent<Rigidbody2D>();
     }
 
@@ -42,8 +44,6 @@ public class playerControl : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-
-
         if (col.gameObject.name == "Note(Clone)")
         {
             col.gameObject.SetActive(false);
