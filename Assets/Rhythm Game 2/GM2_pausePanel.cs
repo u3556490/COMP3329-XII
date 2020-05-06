@@ -17,7 +17,7 @@ public class GM2_pausePanel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(pausePanelKey) && GM2_Panel_pop.gameStart)
+        if (Input.GetKeyDown(pausePanelKey) && GM2_Panel_pop.gameStart && (GM_2GM.totalTimeCount > 0.1))
         {
             if (paused)
             {
@@ -32,21 +32,21 @@ public class GM2_pausePanel : MonoBehaviour
     }
     public void pausePanelCheck()
     {
-            Debug.Log("sent pause request");
+        Debug.Log("sent pause request");
 
-            paused = true;
-            GM_2GM.GM2Audio.Pause();
-            Time.timeScale = 0.0F;
-            pausePanel.gameObject.SetActive(true);
-        
+        paused = true;
+        GM_2GM.GM2Audio.Pause();
+        Time.timeScale = 0.0F;
+        pausePanel.gameObject.SetActive(true);
+
     }
     public void resumePanelCheck()
-    {  
-            Debug.Log("sent resume request");
-            pausePanel.gameObject.SetActive(false);
-            Time.timeScale = 1.0F;
-            GM_2GM.GM2Audio.Play();
-            paused = false;
+    {
+        Debug.Log("sent resume request");
+        pausePanel.gameObject.SetActive(false);
+        Time.timeScale = 1.0F;
+        GM_2GM.GM2Audio.Play();
+        paused = false;
 
     }
 }
