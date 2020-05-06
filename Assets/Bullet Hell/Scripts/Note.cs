@@ -41,22 +41,11 @@ public class Note : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        string name = col.gameObject.name;
 
-        if (name == "Demon")
-        {
-            Destroy(gameObject);
-        }
-        if (name == "Note(Clone)")
-        {
-            Destroy(gameObject);
 
-            Destroy(col.gameObject);
-        }
-        if (name == "player")
+        if (col.gameObject.tag == "Demon")
         {
-            Destroy(gameObject);
-
+            
         }
     }
 

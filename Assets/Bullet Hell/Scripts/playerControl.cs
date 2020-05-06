@@ -38,4 +38,14 @@ public class playerControl : MonoBehaviour
                 transform.position + changepos * speed * Time.deltaTime
             );
     }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+
+
+        if (col.gameObject.tag == "Note(Clone)")
+        {
+            Destroy(col.gameObject);
+        }
+    }
 }
