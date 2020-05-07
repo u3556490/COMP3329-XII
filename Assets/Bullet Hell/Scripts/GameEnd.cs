@@ -31,7 +31,7 @@ public class GameEnd : MonoBehaviour
                 Debug.Log("detected enter return");
                 SceneManager.LoadScene(next_scene);
             }
-            Time.timeScale = 0.0F;
+            //Time.timeScale = 0.0F;
 
         }
     }
