@@ -10,6 +10,8 @@ public class GameOver : MonoBehaviour
     public KeyCode returnMainGameKey;
     public Text gameOverMessage;
     public string next_scene;
+    public Vector2 playerTargetPos;
+    public VectorValue playerPos;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +31,7 @@ public class GameOver : MonoBehaviour
             if (Input.GetKeyDown(returnMainGameKey))
             {
                 Debug.Log("detected enter return");
+                playerPos.initialValue = playerTargetPos;
                 SceneManager.LoadScene(next_scene);
             }
             //Time.timeScale = 0.0F;
