@@ -1171,33 +1171,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1501990123}
   sentences:
-  - '*In an ancient medieval world, near the end of a solemn ceremony, a famed musician
-    stands before the King and begins to play his flute.*'
-  - 'Musician: *places the flute upon his nose* '
-  - '*The crowd is visibly startled and stares in confusion* '
-  - '*The musician begins to play, in spite of the weird stares.  Albeit peculiar
-    in performance, a sweet-sounding melody falls upon the ears of the audience.*'
-  - 'King: What are you doing? Flutes should be played by the MOUTH, not this nonsense!
-    How dare you taint the sanctity of this ceremony with your abnormal act!'
-  - 'Musician: Your Majesty, this is a blessing in the tradition amongst us common
-    folk. Please allow me to continue to transfer such a blessing to my great liege.'
-  - 'King: Enough with this nonsense explanation! Guards - take him to the guillotine!'
-  - "*The guards step forward and seize the musician.  Meanwhile, the Queen leans
-    over and whispers discreetly into the King\u2019s ear.* "
-  - 'Queen: Perhaps we should simply exile him.  I have heard that such a tradition
-    originated in a village far from the realm. Let us exile him and see if he can
-    deliver us such proof. '
-  - 'Queen: If he seeks to deceive us, he will not survive long regardless beyond
-    the city walls.'
-  - '*The king strokes his beard in silence*'
-  - 'King: I have changed my mind. I shall grant mercy to you, commoner. You shall
-    be exiled at once.'
-  - 'King: Until you can find proof of this tradition you speak of, you will not
-    be welcomed in my kingdom.'
-  - 'Musician: Thank you for being merciful, my liege. I will return as soon as possible.'
-  - "*The guards continue to pull the musician out of the palace and throw him out
-    of the castle\u2019s entry gate.  It seems to be an end to the event, but it
-    is just the beginning of the musician's adventure...*"
+  - The King was disturbed as he was busy engaging in his regular extramarital affairs.
+  - 'The message read:'
+  - I am back, Your Majesty.
+  - 'King: So show me the proof! I almost forgot about this matter.'
+  - 'Musician: And here it is! This document from centuries ago is a prayer, praising
+    the importance of the nostril flute.'
+  - 'King: And why is it mentioned?'
+  - 'Musician: Paintings from the same era has shown people using nostril flutes
+    to repel demonic spirits and keep themselves safe. '
+  - 'Musician: Which means if we employ this nostril flute nationwide, it can save
+    us a lot of effort.'
+  - 'King: Wherefore?'
+  - "Musician: If we can repel demons this way, then we won\u2019t have to invest
+    in summoning heroes from other worlds to save us from devils at all."
+  - "King: \u2026\u2026 You have a point."
+  - 'King: Alright then! Do you have recent proof that this nostril flute thingy
+    still works?'
+  - Musician produced the severed head of Semitritonus from his sack.
+  - 'King: What is this?'
+  - 'Musician: It is a creature straight outta hell, your majesty.'
+  - 'King: You took care of this hideous thing with a nostril flute?'
+  - 'Musician: Exactly.'
+  - "King: \u2026\u2026 Fair enough. Now go home."
+  - 'Queen: Hold on, are you now just neglecting what he suggested? No need for heroes.'
+  - 'King: Well, yeah, yeah.'
+  - 'Queen: We should employ him again and have him promote this nostril flute across
+    the country.'
+  - "King: Aye, aye, you\u2019re right. Then so be it."
+  - '[Congratulations on clearing the game!]'
   typingSpeed: 0.02
   continueBtn: {fileID: 682122920}
   click: {fileID: 926693507}

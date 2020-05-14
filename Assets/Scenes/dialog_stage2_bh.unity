@@ -946,27 +946,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1501990123}
   sentences:
-  - 'Musician: For some reason I am unable to leave this town.'
-  - 'Musician: Everybody is hostile as hell.'
-  - '???: Hell? Who said hell?'
-  - "Musician: \u2026\u2026 What? Did I hear\u2026\u2026 something?"
-  - '???: Of course you do!'
-  - '???: Did you know whom have you brought to the world?'
-  - '???: When you performed that nostril flute, the true devils of music were awakened.'
-  - '???: And to leave this place and seek redemption, you will have to go over my
-    dead body first.'
-  - 'Musician: Tell me your name, so I can sue you in a court.'
-  - '???: Court? This is your judgement day! Behold me, the Wolf Interval!'
-  - 'Musician: Ah, your name brings back memories. Every time I tune the detuned
-    instruments I have to endure that!'
-  - 'Wolf: Yeah, yeah.'
-  - 'Musician: Fine, then. I shall tame you with this well-tempered nostril flute!'
-  - '[Bullet hell tutorial]'
-  - Move with ASWD or arrow keys as usual.
-  - Hitting space bar shoots a nostril note.
-  - Your task will be landing as many hits on the enemy while sustaining a minimal
-    number of hits by his projectiles.
-  - Good luck!
+  - 'After a search that lasted for 3,329 days, the musician found himself deep in
+    a primeval forest, to where all evidence uniformly pointed:'
+  - This was the very place, where nostril flute was used for rituals and great ceremonies
+    during its heyday.
+  - There was this house - stranded in an abandoned hamlet, doors flung wide open,
+    inviting all curious men to come in.
+  - 'Musician: Henlo? Anybody there?'
+  - "Musician: \u2026\u2026"
+  - "Musician: No one is here. And \u2026\u2026"
+  - 'Musician: This place is hauntingly empty.'
+  - "Musician: This old-timey inner decoration \u2026\u2026 This should be it. "
+  - "Musician: Drawings of rituals centuries ago, portraits of Kings of ye olden
+    days \u2026\u2026"
+  - 'Musician: And there he is. This chap with his nostril flute.'
+  - 'In the middle of the house there was a table. On top of it there lied a piece
+    of paper, certainly is it weathered, but the writing was still clear. It read:'
+  - 'Paper: Give us peace, O God,'
+  - 'Paper: To those, who patiently wait for thee.'
+  - 'Paper: Hear the music of thy servant,'
+  - 'Paper: And of thy people: Nostril flute.'
+  - 'Paper: Glad was I, when thou saidest unto me, '
+  - 'Paper: We will go into the house of the Lord,'
+  - 'Paper: Glory be to the nostril flute.'
+  - "Musician: \u2026\u2026!"
+  - 'Musician: Yep. This is exactly what I need.'
+  - '???: And exactly what I would keep here.'
+  - 'Musician: ! Who are you? You look so hideous.'
+  - "???: Don\u2019t you dare insult me!"
+  - '???: I am the devil of music. Semitritonus. And I want you leave everything
+    here untouched.'
+  - "Musician: That\u2019s a concise way to introduce yourself, I must say. But why?"
+  - "Semitritonus: I had nostril flute removed from this world\u2026\u2026"
+  - 'Semitritonus: Because its smug aura mocks me.'
+  - "Musician: I don\u2019t think it is the actual reason. Anyways, I am grabbing
+    this paper home."
+  - 'Semitritonus: Sure. '
+  - 'Musician: Thanks dude.'
+  - 'Semitritonus: What are your last words? '
+  - 'Musician: What?'
+  - "Semitritonus: I told you, you have to leave it here as it is. Now you are not
+    obeying what I say, so\u2026\u2026"
+  - 'Musician: A-ha, what are YOUR own last words then?'
+  - 'Semitritonus: I hate this look of yours.'
+  - '[Click Continue to proceed to final bullet hell!]'
   typingSpeed: 0.02
   continueBtn: {fileID: 682122920}
   click: {fileID: 926693507}

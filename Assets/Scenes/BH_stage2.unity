@@ -489,7 +489,7 @@ MonoBehaviour:
   returnMainGameKey: 13
   gameOverMessage: {fileID: 1125076800}
   next_scene: stage_2
-  playerTargetPos: {x: 0, y: -6}
+  playerTargetPos: {x: -1.48, y: -1.5}
   playerPos: {fileID: 11400000, guid: e0294d416919a614482c25e0969e8aa2, type: 2}
 --- !u!1 &525555838
 GameObject:
