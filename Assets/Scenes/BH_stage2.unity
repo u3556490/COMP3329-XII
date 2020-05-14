@@ -387,7 +387,7 @@ MonoBehaviour:
   endPanel: {fileID: 95716049}
   returnMainGameKey: 13
   endMessage: {fileID: 11587837}
-  next_scene: stage_2
+  next_scene: dialog_stage2
   playerTargetPos: {x: 0, y: -6}
   playerPos: {fileID: 11400000, guid: e0294d416919a614482c25e0969e8aa2, type: 2}
 --- !u!114 &377533085
@@ -488,8 +488,8 @@ MonoBehaviour:
   deadPanel: {fileID: 298356893}
   returnMainGameKey: 13
   gameOverMessage: {fileID: 1125076800}
-  next_scene: stage_1
-  playerTargetPos: {x: 0, y: 0}
+  next_scene: stage_2
+  playerTargetPos: {x: -1.48, y: -1.5}
   playerPos: {fileID: 11400000, guid: e0294d416919a614482c25e0969e8aa2, type: 2}
 --- !u!1 &525555838
 GameObject:
@@ -746,7 +746,7 @@ GameObject:
   - component: {fileID: 670878912}
   - component: {fileID: 670878911}
   m_Layer: 0
-  m_Name: verdi_messa_kh_02_dies_irae
+  m_Name: BGM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -762,9 +762,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ea26fa2851996d44e90f9f6f6ea22c4a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 54eee1da27d5d8b4ca5b7b50413f8fc8, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.9
   m_Pitch: 1
   Loop: 1
   Mute: 0
